@@ -1,10 +1,10 @@
 {
   "name": "wx-mp-router",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a router for Wechat Mini Program",
-  "main": "index.js",
+  "main": "./dist/wx-router.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production --config ./build/webpack.config.js"
   },
   "keywords": [
     "wx",
@@ -21,5 +21,19 @@
   "homepage": "https://github.com/ben-lau/wx-router",
   "bugs": {
     "url": "https://github.com/ben-lau/wx-router/issues"
+  },
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/runtime": "^7.9.2",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
   }
 }

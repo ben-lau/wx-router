@@ -1,3 +1,6 @@
 example/
 .git/
 .vscode/
+node_modules/
+webpack.config.js
+build/
