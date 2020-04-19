@@ -1,4 +1,5 @@
 import { promisify, stringifyQuery } from '../../utils/index';
+
 const _routerList = Symbol('_routerList');
 const _query = Symbol('_query');
 const _routeHooks = Symbol('_routeHooks');
@@ -38,6 +39,13 @@ class WxRouter {
 
     wx.onAppRoute &&
       wx.onAppRoute(e => {
+        const page = getCurrentPages();
+        const thisPage = page[page.length - 1];
+        if (thisPage) {
+          const onRoute = thisPage.onRoute;
+          thisPage.$query = this[_query];
+          typeof onRoute === 'function' && onRoute(this[_query]);
+        }
         this[_routeHooks].forEach(fn => {
           try {
             typeof fn === 'function' && fn(e, this[_query], this[_routerList]);

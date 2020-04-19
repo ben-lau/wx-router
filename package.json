@@ -1,5 +1,5 @@
 {
-  "name": "wx-router",
+  "name": "wx-mp-router",
   "version": "1.0.0",
   "description": "a router for Wechat Mini Program",
   "main": "index.js",
@@ -12,9 +12,14 @@
     "router",
     "wx-router",
     "mp-router",
+    "wx-mp-router",
     "wxRouter",
     "mpRouter"
   ],
   "author": "Ben Lau",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/ben-lau/wx-router",
+  "bugs": {
+    "url": "https://github.com/ben-lau/wx-router/issues"
+  }
 }

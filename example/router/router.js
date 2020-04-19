@@ -1,4 +1,4 @@
-import WxRouter from './../lib/WxRouter/WxRouter';
+import WxRouter from 'wx-mp-router';
 
 const routerList = [
   {
@@ -27,16 +27,4 @@ const routerList = [
   }
 ];
 
-const router = new WxRouter(routerList);
-
-router.onRoute((e, query) => {
-  const page = getCurrentPages();
-  const thisPage = page[page.length - 1];
-  if (thisPage) {
-    const onRoute = thisPage.onRoute;
-    thisPage.$query = query;
-    typeof onRoute === 'function' && onRoute(query);
-  }
-});
-
-export default router;
+export default new WxRouter(routerList);
