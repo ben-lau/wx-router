@@ -1,6 +1,6 @@
 {
   "name": "wx-mp-router",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a router for Wechat Mini Program",
   "main": "./dist/wx-router.min.js",
   "scripts": {
