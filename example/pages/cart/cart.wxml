@@ -1,0 +1,18 @@
+<view wx:if="{{from}}">从{{from}}进入本页面</view>
+<view wx:if="{{id}}">注册成功获得id:{{id}}</view>
+
+<button
+  type="primary"
+  bindtap="loginOnTap"
+>跳转至login</button>
+
+<button
+  type="primary"
+  bindtap="mineOnTap"
+>跳转至Mine</button>
+
+<view>购物车数量：{{cartCount}}</view>
+<button
+  type="primary"
+  bindtap="addInCartOnTap"
+>假设这里添加商品+1</button>

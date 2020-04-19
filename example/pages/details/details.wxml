@@ -1,0 +1,15 @@
+<view wx:if="{{from}}">从{{from}}进入本页面</view>
+<view>购物车数量：{{cartCount}}</view>
+<view
+  class="tips"
+>该demo只是模拟一下加入购物车场景，因为更新tabbar的api（setTabBarBadge）必须在tab页面才能调用，这里只是演示一下如何更优雅的在路由里完成</view>
+<view class="tips">本人有更详细的全局状态管理系统，这里先不放了</view>
+
+<button
+  type="primary"
+  bindtap="addInCartOnTap"
+>假设这里添加商品+1</button>
+<button
+  type="warn"
+  bindtap="cancelOnTap"
+>取消</button>

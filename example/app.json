@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/cart/cart",
+    "pages/mine/mine",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/details/details"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WxRouter",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#858585",
+    "selectedColor": "#f74d61",
+    "backgroundColor": "#fbfbfb",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home-o.png",
+        "selectedIconPath": "images/home.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/cart-o.png",
+        "selectedIconPath": "images/cart.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/user-o.png",
+        "selectedIconPath": "images/user.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

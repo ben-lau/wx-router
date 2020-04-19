@@ -1,0 +1,4 @@
+.tips {
+  font-size: 26rpx;
+  color: #858585;
+}

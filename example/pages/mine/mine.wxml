@@ -1,0 +1,12 @@
+<view wx:if="{{from}}">从{{from}}进入本页面</view>
+<view wx:if="{{id}}">注册成功获得id:{{id}}</view>
+
+<button
+  type="primary"
+  bindtap="loginOnTap"
+>跳转至login</button>
+
+<button
+  type="primary"
+  bindtap="homeOnTap"
+>跳转至Home</button>

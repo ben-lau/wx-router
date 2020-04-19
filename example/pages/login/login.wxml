@@ -1,0 +1,10 @@
+<view wx:if="{{from}}">从{{from}}进入本页面</view>
+
+<button
+  type="primary"
+  bindtap="registerOnTap"
+>假设你这里没帐号要去注册</button>
+<button
+  type="warn"
+  bindtap="cancelOnTap"
+>取消</button>
