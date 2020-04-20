@@ -1,20 +1,29 @@
 {
   "name": "wx-mp-router",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a router for Wechat Mini Program",
   "main": "./dist/wx-router.min.js",
   "scripts": {
     "build": "webpack --mode production --config ./build/webpack.config.js"
   },
   "keywords": [
+    "wx-mp-router",
+    "wx mp router",
     "wx",
     "mp",
     "router",
     "wx-router",
     "mp-router",
-    "wx-mp-router",
     "wxRouter",
-    "mpRouter"
+    "mpRouter",
+    "wx router",
+    "mp router",
+    "navigate",
+    "navigation",
+    "路由",
+    "小程序路由",
+    "导航",
+    "小程序导航"
   ],
   "author": "Ben Lau",
   "license": "MIT",
